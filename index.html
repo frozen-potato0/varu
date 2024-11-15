@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Varun Apology Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="stage">
+        <h1>The Great Varun Apology Quest!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rKE6WmEU7fBcEZ2SXsVkBw8WwT0K89SWu9yh3wEq_S_frfjMwVBR61b-wts9C4YX4y8&usqp=CAU" alt="Bubu and Dudu" id="bubuDudu" class="mainImage">
+        <p id="message">Ready for a fun adventure? Click the button below to start!</p>
+        <button id="nextButton">Start Adventure</button>
+    </div>
+
+    <div id="mazeGame" class="container hidden">
+        <h2>Help Varun find Siddhii!</h2>
+        <div id="mazeContainer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHPTIY88tvhDS5CIsMiHU3JENiVtBrcTgta8QTLc_Z-KG3PjavBYHjUTtcbQfm-SUzS14&usqp=CAU" class="character" id="bubu" style="position: absolute; top: 0; left: 0;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyvDZrDMffTkSif6Sb2deBxzOEdYbTHuVSGszmbU0OLVV9YQ30b8uNY2ws_j9uswKqFg&usqp=CAU" class="character" id="dudu" style="position: absolute; bottom: 0; right: 0;">
+        </div>
+        <p>Use the arrow keys to move Varun to Siddhii!</p>
+    </div>
+
+    <div id="sillyQuiz" class="container hidden">
+        <h2>Silly Quiz!</h2>
+        <p>Pick an answer (they’re all right!)</p>
+        <ul>
+            <li><button onclick="nextStage()">Varun is stupid?</button></li>
+            <li><button onclick="nextStage()">Varun is too stupid?</button></li>
+            <li><button onclick="nextStage()">Varun is too too stupid?</button></li>
+        </ul>
+    </div>
+
+    <div id="heartAnimation" class="container hidden">
+        <p>Varun wants to say soemthing as you have came soo far in this game</p>
+        <div id="heartContainer"></div>
+        <button id="finalMessageButton">See Final Message</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
